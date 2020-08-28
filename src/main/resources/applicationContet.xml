@@ -11,8 +11,8 @@
           class="ru.course.spring.swampy.ClassicalMusic">
     </bean>
 
-    <bean id="musicPlayer" class="ru.course.spring.swampy.MusicPlayer">
-        <constructor-arg ref="musicBean"></constructor-arg>
-
+    <bean id="musicPlayer"
+          class="ru.course.spring.swampy.MusicPlayer">
+        <property name="music" ref="musicBean"/>
     </bean>
 </beans>
