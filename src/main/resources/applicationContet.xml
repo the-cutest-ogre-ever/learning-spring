@@ -14,5 +14,8 @@
     <bean id="musicPlayer"
           class="ru.course.spring.swampy.MusicPlayer">
         <property name="music" ref="musicBean"/>
+        <property name="name" value="MP3 Player"></property>
+        <property name="volume" value="50"/>
+
     </bean>
 </beans>
