@@ -10,7 +10,7 @@
   <packaging>war</packaging>
 
   <name>ru.course.spring.swampy Maven Webapp</name>
-  
+
   <url>http://www.example.com</url>
 
   <properties>

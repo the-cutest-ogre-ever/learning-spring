@@ -7,9 +7,8 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="testBean"
-          class="ru.course.spring.swampy.TestBean">
-        <constructor-arg value="Srex"/>
+    <bean id="musicBean"
+          class="ru.course.spring.swampy.RockMusic">
     </bean>
 
 </beans>
