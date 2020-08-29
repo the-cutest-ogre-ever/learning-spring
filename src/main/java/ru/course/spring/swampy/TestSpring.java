@@ -9,8 +9,15 @@ public class TestSpring {
         //Music music = context.getBean("musicBean", Music.class);
 
         //MusicPlayer musicPlayer = new MusicPlayer(music);
-        MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
-        musicPlayer.playMusic();
+        MusicPlayer firstMusicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
+        //musicPlayer.playMusic();
+        MusicPlayer secondMusicPlayer = context.getBean("musicPlayer",MusicPlayer.class);
+
+        boolean cmp = firstMusicPlayer == secondMusicPlayer;
+
+        System.out.println(cmp);
+        System.out.println(firstMusicPlayer); //  должен выводить кэш
+        System.out.println(secondMusicPlayer);
 
         context.close();
     }
