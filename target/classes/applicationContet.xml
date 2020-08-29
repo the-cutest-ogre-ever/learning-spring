@@ -26,7 +26,8 @@
     </bean>
 
     <bean id="musicPlayer"
-          class="ru.course.spring.swampy.MusicPlayer">
+          class="ru.course.spring.swampy.MusicPlayer"
+    scope="prototype">
         <property name="name" value="${musicPlayer.name}"/>
         <property name="volume" value="${musicPlayer.volume}"/>
         <property name="musicList">

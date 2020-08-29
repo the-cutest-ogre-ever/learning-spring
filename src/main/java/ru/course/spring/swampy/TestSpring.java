@@ -19,6 +19,11 @@ public class TestSpring {
         System.out.println(firstMusicPlayer); //  должен выводить кэш
         System.out.println(secondMusicPlayer);
 
+        firstMusicPlayer.setVolume(10);
+
+        System.out.println(firstMusicPlayer.getVolume());
+        System.out.println(secondMusicPlayer.getVolume());
+
         context.close();
     }
 }
