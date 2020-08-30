@@ -27,7 +27,6 @@ public class TestSpring {
         Music music = context.getBean("musicBean1",Music.class);
 
         System.out.println(music.getSong());
-        //System.out.println(music);
 
         context.close();
     }

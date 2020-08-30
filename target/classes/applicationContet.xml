@@ -12,7 +12,8 @@
     <bean id="musicBean1"
           class="ru.course.spring.swampy.ClassicalMusic"
           init-method="init"
-          destroy-method="dest">
+          destroy-method="dest"
+          factory-method="getClassical">
     </bean>
 
 <!--    <<bean id="musicBean2"
