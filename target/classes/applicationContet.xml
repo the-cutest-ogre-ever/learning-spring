@@ -10,10 +10,12 @@
     <context:property-placeholder location="classpath:musicPlayer.properties"></context:property-placeholder>
 
     <bean id="musicBean1"
-          class="ru.course.spring.swampy.ClassicalMusic">
+          class="ru.course.spring.swampy.ClassicalMusic"
+          init-method="init"
+          destroy-method="dest">
     </bean>
 
-    <bean id="musicBean2"
+<!--    <<bean id="musicBean2"
           class="ru.course.spring.swampy.RockMusic">
     </bean>
 
@@ -27,7 +29,7 @@
 
     <bean id="musicPlayer"
           class="ru.course.spring.swampy.MusicPlayer"
-    scope="prototype">
+          scope="prototype">
         <property name="name" value="${musicPlayer.name}"/>
         <property name="volume" value="${musicPlayer.volume}"/>
         <property name="musicList">
@@ -39,5 +41,5 @@
             </list>
         </property>
 
-    </bean>
+    </bean>-->
 </beans>
