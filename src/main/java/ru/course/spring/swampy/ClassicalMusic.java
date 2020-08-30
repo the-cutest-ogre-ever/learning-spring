@@ -1,5 +1,8 @@
 package ru.course.spring.swampy;
 
+import org.springframework.stereotype.Component;
+
+@Component("someClassicalMusic")
 public class ClassicalMusic implements Music {
     private ClassicalMusic() {}
 

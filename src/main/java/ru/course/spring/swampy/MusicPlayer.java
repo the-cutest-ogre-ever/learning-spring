@@ -44,8 +44,6 @@ public class MusicPlayer {
 
     public void playMusic()
     {
-        for (Music music : musicList) {
-            System.out.println(music.getSong());
-        }
+        System.out.println(music.getSong());
     }
 }

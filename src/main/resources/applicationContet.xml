@@ -7,40 +7,5 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:property-placeholder location="classpath:musicPlayer.properties"></context:property-placeholder>
-
-    <bean id="musicBean1"
-          class="ru.course.spring.swampy.ClassicalMusic"
-          init-method="init"
-          destroy-method="dest"
-          factory-method="getClassical">
-    </bean>
-
-<!--    <<bean id="musicBean2"
-          class="ru.course.spring.swampy.RockMusic">
-    </bean>
-
-    <bean id="musicBean3"
-          class="ru.course.spring.swampy.SadMusic">
-    </bean>
-
-    <bean id="musicBean4"
-          class="ru.course.spring.swampy.StrangeMusic">
-    </bean>
-
-    <bean id="musicPlayer"
-          class="ru.course.spring.swampy.MusicPlayer"
-          scope="prototype">
-        <property name="name" value="${musicPlayer.name}"/>
-        <property name="volume" value="${musicPlayer.volume}"/>
-        <property name="musicList">
-            <list>
-                <ref bean="musicBean1"/>
-                <ref bean="musicBean2"/>
-                <ref bean="musicBean3"/>
-                <ref bean="musicBean4"/>
-            </list>
-        </property>
-
-    </bean>-->
+        <context:component-scan base-package="ru.course.spring.swampy"/>
 </beans>
